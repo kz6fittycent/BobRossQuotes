@@ -21,6 +21,7 @@ def build_bubble(quote=""):
 
 
 def main():
+ 
     with open(quotes_path) as quotes_file:
         print(build_bubble(random.choice(quotes_file.readlines())))
 
