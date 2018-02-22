@@ -1,2 +1,2 @@
 # BobRossQuotes
-A bunch of quotes from Bob Ross
+A collection of quotes from Bob Ross. 
