@@ -1,5 +1,5 @@
 name: bobrossquotes # check to see if it's available
-version: '1.1+git' # this is freakin' awesome
+version: '1.2+git' # this is freakin' awesome
 summary: A collection of Bob Ross quotes # 79 char long summary
 description: |
   Get inspiration and a happier view on life from Bob Ross...in your terminal.
@@ -16,7 +16,8 @@ parts:
   my-part:
     source: https://github.com/kz6fittycent/BobRossQuotes
     source-type: git
-    plugin: python3
+    plugin: python
+    python-version: python3
     
     build-packages:
       - python3
