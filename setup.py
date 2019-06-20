@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="bobross",
-    version="1.0.0",
+    version="1.1",
     description="A collection of quotes from Bob Ross",
     long_description=open("README.md").read(),
     license="MIT",
