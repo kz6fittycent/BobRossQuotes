@@ -1,14 +1,14 @@
-name: bobrossquotes # check to see if it's available
+name: bobrossquotes 
 adopt-info: bobrossquotes
-summary: A collection of Bob Ross quotes # 79 char long summary
+summary: A collection of Bob Ross quotes 
 description: |
   Get inspiration and a happier view on life from Bob Ross...in your terminal.
 
 license: MIT
 
 base: core18
-grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs
+grade: stable 
+confinement: strict
 
 apps:
   bobrossquotes:
