@@ -15,8 +15,11 @@ Or use `pip`:
 ## To run:
 
 From your terminal: 
+
 Snap command: `bobrossquotes`
+
 If installed via `pip`: `bobross`
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=kz6fittycent/BobRossQuotes&type=Date)](https://star-history.com/#kz6fittycent/BobRossQuotes&Date)
