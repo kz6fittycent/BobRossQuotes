@@ -5,7 +5,6 @@ description: |
   Get inspiration and a happier view on life from Bob Ross...in your terminal.
 
 license: MIT
-
 base: core24
 grade: stable 
 confinement: strict
@@ -21,14 +20,7 @@ parts:
     source: https://github.com/kz6fittycent/BobRossQuotes
     source-type: git
     plugin: python
-    python-version: python3
     
     override-pull: |
       craftctl default
-      craftctl set version="$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"  
-    
-    build-packages:
-      - python3
-      
-    stage-packages:
-      - python3
+      craftctl set version="$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
