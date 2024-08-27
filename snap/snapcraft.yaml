@@ -11,7 +11,7 @@ confinement: strict
 
 apps:
   bobrossquotes:
-    command: bobross
+    command: bin/bobross
     environment:
       LC_ALL: C.UTF-8
      
