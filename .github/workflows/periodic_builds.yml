@@ -1,0 +1,42 @@
+name: Periodic Builds and Scans
+on:
+  # Runs at 10:00 UTC everyday
+  schedule:
+    - cron:  '30 10 * * *'
+
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x]    
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: snapcore/action-build@v1
+        id: build
+        
+      - uses: anchore/scan-action@v3
+        id: scan
+        with:
+          severity-cutoff: critical
+          fail-build: false
+          
+      - uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: ${{ steps.scan.outputs.sarif }}
+        
+      - uses: diddlesnaps/snapcraft-review-action@v1
+        with:
+          snap: ${{ steps.build.outputs.snap }}
+          isClassic: 'false'
+          # Plugs and Slots declarations to override default denial (requires store assertion to publish)
+          # plugs: ./plug-declaration.json
+          # slots: ./slot-declaration.json  

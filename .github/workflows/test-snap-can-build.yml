@@ -1,4 +1,4 @@
-name: 🧪 Test snap can be built on x86_64
+name: 🧪 Snap Builds
 
 on:
   push:
@@ -18,6 +18,9 @@ jobs:
 
       - uses: snapcore/action-build@v1
         id: build
+        
+      - uses: anchore/scan-action@v3
+        id: scan            
 
       - uses: diddlesnaps/snapcraft-review-action@v1
         with:

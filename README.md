@@ -1,4 +1,4 @@
-[![bobrossquotes](https://snapcraft.io/bobrossquotes/badge.svg)](https://snapcraft.io/bobrossquotes)
+[![bobrossquotes](https://snapcraft.io/bobrossquotes/badge.svg)](https://snapcraft.io/bobrossquotes)[![🧪 Snap Builds](https://github.com/kz6fittycent/bobrossquotes/workflows/%F0%9F%A7%AA%20Snap%20Builds/badge.svg)](https://github.com/kz6fittycent/bobrossquotes/actions?query=workflow:"🧪+Snap+Builds")[![Periodic Builds and Scans](https://github.com/kz6fittycent/bobrossquotes/actions/workflows/periodic_builds.yml/badge.svg)](https://github.com/kz6fittycent/bobrossquotes/actions/workflows/periodic_builds.yml)[![spell checking](https://github.com/kz6fittycent/BobRossQuotes/actions/workflows/spellcheck.yml/badge.svg?branch=master)](https://github.com/kz6fittycent/BobRossQuotes/actions/workflows/spellcheck.yml)
 
 # BobRossQuotes
 
